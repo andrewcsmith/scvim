@@ -61,7 +61,7 @@ module SC
         }
 
         if File.exists?(@@pipe_loc)
-          warn "there is already a sclang session running, remove it first, than retry"
+          warn "there is already a sclang session running, remove it first, than retry\n#{@@pipe_loc}"
           exit
         end
         #make a new pipe
